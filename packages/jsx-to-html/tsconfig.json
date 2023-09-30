@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "Node16",
+		"skipLibCheck": true,
+		"declaration": true,
+		"outDir": "dist/",
+		"moduleResolution": "Node16",
+		"resolveJsonModule": true,
+		"jsx": "preserve",
+		"jsxImportSource": "solid-js",
+		"incremental": true,
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"verbatimModuleSyntax": true,
+		"stripInternal": true,
+		"useDefineForClassFields": false
+	},
+	"include": ["src", "lib"]
+}

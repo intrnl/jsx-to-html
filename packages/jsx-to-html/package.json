@@ -1,0 +1,33 @@
+{
+	"type": "module",
+	"name": "@intrnl/jsx-to-html",
+	"description": "Serialize JSX to HTML directly and nothing more",
+	"version": "0.1.0",
+	"author": "intrnl",
+	"license": "MIT",
+	"repository": {
+		"url": "https://codeberg.org/intrnl/jsx-to-html"
+	},
+	"files": [
+		"dist",
+		"!types/tsconfig.tsbuildinfo"
+	],
+	"exports": {
+		".": {
+			"import": "./dist/index.js"
+		},
+		"./jsx-runtime": {
+			"import": "./dist/jsx-runtime.js"
+		},
+		"./jsx-dev-runtime": {
+			"import": "./dist/jsx-runtime.js"
+		}
+	},
+	"scripts": {
+		"build": "rm -r dist; tsc",
+		"prepublishOnly": "pnpm run build"
+	},
+	"dependencies": {
+		"csstype": "^3.1.2"
+	}
+}
