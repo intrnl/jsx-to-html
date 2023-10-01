@@ -1,6 +1,3 @@
-// This doesn't really do anything.
-export type JSXKey = string | number;
-
 export class JSXElement<P = any> {
 	constructor(
 		public type: string | Component<P>,
