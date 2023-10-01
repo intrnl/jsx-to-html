@@ -19,7 +19,7 @@ export const repeat = <T, R>(array: T[], mapper: (value: T, idx: number, array: 
 	return out;
 };
 
-const UNSAFE_NAME = /[\\/='"\0<>]/;
+const UNSAFE_NAME = /[\s\\/='"\0<>]/;
 
 const SELF_CLOSING = new Set([
 	'area',
