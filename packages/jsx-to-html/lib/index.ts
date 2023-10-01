@@ -173,7 +173,7 @@ const renderStyleMap = (map: Record<string, any>) => {
 
 	for (const prop in map) {
 		const val = map[prop];
-		result += val + ':' + val + ';';
+		result += prop + ':' + val + ';';
 	}
 
 	return result;
