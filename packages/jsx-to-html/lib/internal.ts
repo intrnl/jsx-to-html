@@ -568,7 +568,7 @@ export namespace JSXInternal {
 		contextmenu?: string;
 		datatype?: string;
 		dir?: HTMLDir;
-		draggable?: boolean | 'false' | 'true';
+		draggable?: 'false' | 'true';
 		exportparts?: string;
 		hidden?: boolean | 'hidden' | 'until-found';
 		id?: string;
