@@ -66,7 +66,7 @@ export const render = (node: JSXNode, unsafe?: boolean): string => {
 			return '';
 		}
 
-		return escape(node, false);
+		return escape('' + node, false);
 	}
 
 	const type = node.type;
@@ -124,7 +124,7 @@ export const render = (node: JSXNode, unsafe?: boolean): string => {
 			if (value === true || value === '') {
 				res = res + ' ' + name;
 			} else {
-				res = res + ' ' + name + '="' + escape(value, true) + '"';
+				res = res + ' ' + name + '="' + escape('' + value, true) + '"';
 			}
 		}
 	}
@@ -148,9 +148,7 @@ export const render = (node: JSXNode, unsafe?: boolean): string => {
 	return res + '>' + html + '</' + type + '>';
 };
 
-const escape = (value: any, attr: boolean) => {
-	const str = '' + value;
-
+const escape = (str: string, attr: boolean) => {
 	let escaped = '';
 	let last = 0;
 
