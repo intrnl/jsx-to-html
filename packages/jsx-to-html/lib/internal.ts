@@ -614,7 +614,6 @@ export namespace JSXInternal {
 		media?: string;
 		ping?: string;
 		referrerpolicy?: HTMLReferrerPolicy;
-		referrerPolicy?: HTMLReferrerPolicy;
 		rel?: string;
 		target?: string;
 		type?: string;
